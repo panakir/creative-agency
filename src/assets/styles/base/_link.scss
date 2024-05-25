@@ -1,0 +1,27 @@
+.link {
+  position: relative;
+  @extend %transition;
+  &_active {
+    font-weight: 700;
+    cursor: default;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: $color-button;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    @extend %transition;
+  }
+
+  &:not(&_active):hover {
+    color: $color-button;
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}

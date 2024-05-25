@@ -1,0 +1,10 @@
+.navigation {
+  color: $color-text-dark;
+  @include font(18px);
+  letter-spacing: 0.18px;
+
+  &__list {
+    display: flex;
+    gap: 52px;
+  }
+}
