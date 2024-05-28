@@ -1,5 +1,4 @@
 .intro {
-  margin-bottom: 15rem;
   cursor: default;
   &__wrapper {
     position: relative;
@@ -36,7 +35,7 @@
     margin-left: 2rem;
     margin-top: 3.5rem;
     &:hover {
-      box-shadow: 0 4px 8px rgba($color-button, 0.5);
+      box-shadow: 0 4px 8px rgba($color-primary, 0.5);
     }
   }
 
@@ -79,7 +78,7 @@
   }
 
   &__visual {
-    color: $color-button;
+    color: $color-primary;
 
     img {
       width: 73.9rem;
@@ -124,18 +123,15 @@
 
   .decor__rect {
     &_1 {
-      position: absolute;
       top: 41.6rem;
       left: 38.8rem;
     }
     &_2 {
-      position: absolute;
       top: 88.4rem;
       left: 42.3rem;
     }
     &_3 {
       transform: rotate(-31.48deg);
-      position: absolute;
       top: 85.1rem;
       left: 50rem;
     }

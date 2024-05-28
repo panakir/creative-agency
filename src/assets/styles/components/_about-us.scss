@@ -1,0 +1,74 @@
+.about-us {
+  position: relative;
+  margin-top: 21.5rem;
+  margin-bottom: 15rem;
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 2rem;
+  }
+
+  &__subtitle {
+    color: $color-primary;
+  }
+
+  &__content {
+    margin-top: 3.6rem;
+  }
+
+  &__visual {
+    img {
+      max-width: 565px;
+      border-radius: 24px;
+    }
+  }
+
+  &__description {
+    flex-basis: 610px;
+    padding: 2.5rem 0;
+  }
+
+  &__text {
+    max-width: 610px;
+    margin-bottom: 2.5rem;
+
+    @include font(2rem);
+    line-height: 32px;
+  }
+  &__buttons {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 5rem;
+    span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+    }
+    &:last-child {
+      margin-left: 2.4rem;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+
+    .decor__rect {
+      z-index: -1;
+      &_4 {
+        top: 14.3rem;
+        left: -3.1rem;
+      }
+      &_5 {
+        top: 50rem;
+        left: 50.3rem;
+      }
+    }
+  }
+}

@@ -4,10 +4,34 @@ html {
 
 body {
   @extend %font-primary;
-  color: $color-text-dark;
+  color: $color-text-light;
 }
 
 h1,
 h2 {
   @extend %font-additional;
+}
+
+h1 {
+  @include font(6.4rem, 800);
+  color: $color-text-dark;
+}
+
+h2 {
+  @include font(5.5rem, 600);
+  color: $color-text-dark;
+}
+
+h3 {
+  @include font(2.4rem, 600);
+  color: $color-primary;
+}
+
+h4 {
+  @include font(2.2rem, 600);
+}
+
+h5 {
+  @include font(2rem, 600);
+  color: $color-primary;
 }

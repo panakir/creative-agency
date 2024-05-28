@@ -8,6 +8,7 @@
   }
 
   &__rect {
+    position: absolute;
     &_1 {
       color: $color-decor-1;
     }
@@ -16,6 +17,12 @@
     }
     &_3 {
       color: $color-decor-3;
+    }
+    &_4 {
+      color: $color-decor-4;
+    }
+    &_5 {
+      color: $color-decor-5;
     }
   }
 }

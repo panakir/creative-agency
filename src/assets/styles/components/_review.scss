@@ -23,11 +23,11 @@
 
   &__title {
     @include font(1rem, 600);
+    color: inherit;
   }
 
   &__subtitle {
     font-size: 0.6rem;
-    color: $color-text-light;
   }
 
   &__content {
