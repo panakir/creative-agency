@@ -1,7 +1,7 @@
 .header {
-  margin-top: 72px;
+  margin-top: 7.2rem;
+  margin-bottom: 6rem;
   &__wrapper {
-    width: 1248px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
   }
 
   &__logo {
-    width: 136px;
-    height: 50px;
+    width: 13.6rem;
+    height: 5rem;
   }
 }

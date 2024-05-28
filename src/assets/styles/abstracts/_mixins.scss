@@ -2,4 +2,5 @@
   font-size: $size;
   font-weight: $weight;
   font-optical-sizing: none;
+  letter-spacing: calc($size * 0.01);
 }

@@ -2,6 +2,18 @@
   font-family: QuickSand, sans-serif;
 }
 
+%font-additional {
+  font-family: Nunito, sans-serif;
+}
+
 %transition {
   transition: all 0.3s ease-in-out;
+}
+
+%circle-prime-bg {
+  background: linear-gradient(rgba(#4485ff, 0.8), #377dff);
+}
+
+%circle-add-bg {
+  background: linear-gradient(#ff8e8e, #f62424);
 }

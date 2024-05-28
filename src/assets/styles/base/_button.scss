@@ -13,5 +13,6 @@
   &:hover {
     color: $color-light;
     background-color: $color-button;
+    box-shadow: 0 4px 8px rgba($color-button, 0.5);
   }
 }

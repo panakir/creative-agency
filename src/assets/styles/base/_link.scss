@@ -1,10 +1,26 @@
 .link {
   position: relative;
   @extend %transition;
+
   &_active {
     font-weight: 700;
     cursor: default;
   }
+
+  &_button {
+    display: block;
+    width: 20rem;
+    @include font(1.6rem, 700);
+    border-radius: 24px;
+    padding: 1.2rem 4.9rem;
+    color: $color-button;
+    border: 1px solid $color-button;
+    &:hover {
+      background-color: $color-button;
+      color: $color-light;
+    }
+  }
+
   &::after {
     content: "";
     display: block;
@@ -17,7 +33,7 @@
     @extend %transition;
   }
 
-  &:not(&_active):hover {
+  &:not(&_active, &_button):hover {
     color: $color-button;
     &::after {
       width: 100%;

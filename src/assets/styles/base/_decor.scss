@@ -1,0 +1,21 @@
+.decor {
+  &__circle {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    width: 3.1rem;
+    height: 3.1rem;
+  }
+
+  &__rect {
+    &_1 {
+      color: $color-decor-1;
+    }
+    &_2 {
+      color: $color-decor-2;
+    }
+    &_3 {
+      color: $color-decor-3;
+    }
+  }
+}
