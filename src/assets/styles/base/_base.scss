@@ -35,3 +35,7 @@ h5 {
   @include font(2rem, 600);
   color: $color-primary;
 }
+
+.text {
+  @include font(2rem, 400, 0.01, 32px);
+}

@@ -19,7 +19,7 @@
 
   &__visual {
     img {
-      max-width: 565px;
+      max-width: 56.5rem;
       border-radius: 24px;
     }
   }
@@ -30,11 +30,8 @@
   }
 
   &__text {
-    max-width: 610px;
+    max-width: 61rem;
     margin-bottom: 2.5rem;
-
-    @include font(2rem);
-    line-height: 32px;
   }
   &__buttons {
     display: flex;
@@ -57,9 +54,7 @@
 
   &__decor {
     position: absolute;
-
     .decor__rect {
-      z-index: -1;
       &_4 {
         top: 14.3rem;
         left: -3.1rem;

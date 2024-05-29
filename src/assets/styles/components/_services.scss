@@ -18,9 +18,7 @@
   }
 
   &__text {
-    @include font(2rem, 400, 0.01, 34px);
     max-width: 51rem;
-    line-height: 32px;
   }
 
   &__link {
