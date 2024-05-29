@@ -1,6 +1,16 @@
-@mixin font($size, $weight: 400) {
+@mixin font($size, $weight: 400, $letter: 0.01, $height: normal) {
   font-size: $size;
   font-weight: $weight;
+  line-height: $height;
   font-optical-sizing: none;
-  letter-spacing: calc($size * 0.01);
+  letter-spacing: calc($size * $letter);
+}
+
+@mixin layout($width) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  > * {
+    flex-basis: $width;
+  }
 }

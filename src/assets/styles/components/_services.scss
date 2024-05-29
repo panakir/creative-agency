@@ -1,0 +1,60 @@
+.services {
+  margin-top: 15.5rem;
+  &__wrapper {
+    @include layout(45.5%);
+  }
+
+  &__content {
+    margin-top: 6.4rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 2.9rem;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+    @include font(5.5rem, 700, 0.003, 130%);
+  }
+
+  &__text {
+    @include font(2rem, 400, 0.01, 34px);
+    max-width: 51rem;
+    line-height: 32px;
+  }
+
+  &__link {
+    @include font(2rem, 600);
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3.5rem;
+    margin-top: 4rem;
+
+    span {
+      display: inline-block;
+
+      width: 24px;
+      height: 24px;
+      margin-left: 2rem;
+      background-image: url("./assets/images/services/arrow-right.svg");
+    }
+  }
+
+  &__cards {
+    @include layout(262px);
+    gap: 4rem;
+
+    .card {
+      @extend %transition;
+      height: 269px;
+
+      line-height: 32px;
+
+      &:hover {
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
