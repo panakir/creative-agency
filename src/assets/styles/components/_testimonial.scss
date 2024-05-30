@@ -1,0 +1,33 @@
+.testimonial {
+  margin-top: 19.5rem;
+
+  &__header {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin-bottom: 1.7rem;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: 5.3rem;
+    @include layout(30%);
+    gap: 5.4rem;
+  }
+
+  &__decor {
+    .decor__rect_6 {
+      transform: rotate(14.48deg);
+      &:first-child {
+        top: -41px;
+        left: 107px;
+      }
+      &:last-child {
+        bottom: -33px;
+        right: -15px;
+      }
+    }
+  }
+}

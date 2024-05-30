@@ -2,37 +2,65 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 27px 20px 23px 20px;
+  padding: 2.7rem 2rem 2.3rem 2rem;
   border-radius: 16px;
   box-shadow: 0 8px 24px 0 rgba($color: #000000, $alpha: 0.15);
   background-color: $color-light;
 
+  &_large {
+    height: 33.5rem;
+    padding: 4.6rem 3rem 0 4rem;
+  }
+
   &__header {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+
+    &_large {
+      gap: 3rem;
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__heading {
+    &_large {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
   }
 
   &__avatar {
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
     img {
       width: 100%;
+    }
+    &_large {
+      width: 7rem;
+      height: 7rem;
     }
   }
 
   &__title {
-    @include font(1rem, 600);
+    @include font(2rem, 600);
     color: inherit;
   }
 
   &__subtitle {
-    font-size: 0.6rem;
+    font-size: 1.1rem;
   }
 
   &__content {
-    margin-top: 1.2rem;
     @extend %font-additional;
-    @include font(1rem);
+    @include font(2rem);
+    &_large {
+      @include font(1.8rem, 400, 0.01, 28px);
+      p {
+        @extend %font-primary;
+      }
+    }
   }
 }

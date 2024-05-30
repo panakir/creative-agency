@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  @include font(5.5rem, 600);
+  @include font(5.5rem, 600, 0.003);
   color: $color-text-dark;
 }
 
@@ -32,7 +32,7 @@ h4 {
 }
 
 h5 {
-  @include font(2rem, 600);
+  @include font(2rem, 600, 0.003);
   color: $color-primary;
 }
 
