@@ -1,7 +1,5 @@
 .review {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   padding: 2.7rem 2rem 2.3rem 2rem;
   border-radius: 16px;
   box-shadow: 0 8px 24px 0 rgba($color: #000000, $alpha: 0.15);
@@ -24,6 +22,7 @@
   }
 
   &__heading {
+    margin-top: 0.5rem;
     &_large {
       display: flex;
       flex-direction: column;

@@ -1,19 +1,16 @@
 .portfolio {
-  margin-top: 12.7rem;
+  margin-top: 13rem;
 
   &__header {
     margin: 0 auto;
     text-align: center;
-    max-width: 67.4rem;
-    margin-bottom: 7.2rem;
+    max-width: 67rem;
+    margin-bottom: 7.1rem;
   }
 
   &__title {
+    margin-top: 1.9rem;
     margin-bottom: 2.9rem;
-  }
-
-  &__subtitle {
-    margin-bottom: 1.5rem;
   }
 
   &__text {
@@ -58,7 +55,7 @@
 
   &__slide-title {
     color: $color-light;
-    @include font(2.4rem, 600, 0.003);
+    @include font(2.4rem, 700, 0.003);
   }
 
   &__link {
@@ -70,12 +67,12 @@
     .decor__rect {
       &:first-child {
         transform: rotate(-16.32deg);
-        top: 153px;
+        top: 150px;
         right: -4px;
       }
       &:last-child {
         transform: rotate(19.17deg);
-        bottom: 317px;
+        bottom: 313px;
         left: 384px;
       }
     }

@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-  @include font(2.4rem, 600);
+  @include font(2.4rem, 700, 0.01, 24px);
   color: $color-primary;
 }
 

@@ -5,15 +5,12 @@
   }
 
   &__content {
-    margin-top: 6.4rem;
-  }
-
-  &__subtitle {
-    margin-bottom: 2.9rem;
+    margin-top: 6.7rem;
   }
 
   &__title {
-    margin-bottom: 1.5rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.7rem;
     @include font(5.5rem, 700, 0.003, 130%);
   }
 
@@ -22,20 +19,21 @@
   }
 
   &__link {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
     @include font(2rem, 600);
     color: $color-primary;
-    display: flex;
+
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 3.5rem;
-    margin-top: 4rem;
+    padding-right: 4.3rem;
+    margin-top: 4.2rem;
 
     span {
       display: inline-block;
-
       width: 24px;
       height: 24px;
-      margin-left: 2rem;
+      margin-left: 1.5rem;
       background-image: url("./assets/images/services/arrow-right.svg");
     }
   }
@@ -48,7 +46,9 @@
       @extend %transition;
       height: 269px;
 
-      line-height: 32px;
+      &__title {
+        line-height: 32px;
+      }
 
       &:hover {
         box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);

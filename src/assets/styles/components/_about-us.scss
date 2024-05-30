@@ -1,6 +1,6 @@
 .about-us {
   position: relative;
-  margin-top: 21.5rem;
+  margin-top: 20.9rem;
   &__header {
     text-align: center;
   }
@@ -14,7 +14,8 @@
   }
 
   &__content {
-    margin-top: 3.6rem;
+    margin-top: 3.8rem;
+    @include layout(45%);
   }
 
   &__visual {
@@ -26,12 +27,12 @@
 
   &__description {
     flex-basis: 610px;
-    padding: 2.5rem 0;
+    padding: 2.6rem 0;
   }
 
   &__text {
     max-width: 61rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.4rem;
   }
   &__buttons {
     display: flex;
@@ -56,11 +57,11 @@
     position: absolute;
     .decor__rect {
       &_4 {
-        top: 14.3rem;
+        top: 13.9rem;
         left: -3.1rem;
       }
       &_5 {
-        top: 50rem;
+        top: 49.6rem;
         left: 50.3rem;
       }
     }
