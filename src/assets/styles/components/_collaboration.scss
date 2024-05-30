@@ -1,0 +1,64 @@
+.collaboration {
+  margin-top: 20rem;
+
+  &__content {
+    @include layout(45%);
+  }
+
+  &__description {
+    max-width: 49rem;
+    padding-top: 8rem;
+  }
+
+  &__text {
+    margin: 2.7rem 0;
+  }
+  &__link {
+    width: 19.5rem;
+  }
+
+  &__visual {
+    display: flex;
+  }
+
+  &__image {
+    position: relative;
+    border-radius: 16px;
+
+    &:first-child {
+      background: url("./assets/images/collaboration/give-five.jpg") center /
+        133% no-repeat;
+      top: 134px;
+      left: 32px;
+      width: 32.5rem;
+      height: 28.8rem;
+    }
+
+    &:last-child {
+      background: url("./assets/images/collaboration/meet-up.jpg") center / 174%
+        no-repeat;
+      top: 43px;
+      width: 29.4rem;
+      height: 28.8rem;
+      z-index: -1;
+    }
+  }
+
+  &__decor {
+    .decor__rect {
+      &_large_1 {
+        top: 99px;
+        left: 634px;
+      }
+
+      &_4 {
+        bottom: 31px;
+        right: 83px;
+        &:last-child {
+          bottom: 31px;
+          right: 194px;
+        }
+      }
+    }
+  }
+}
