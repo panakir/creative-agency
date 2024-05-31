@@ -1,0 +1,67 @@
+.footer {
+  margin-top: 18rem;
+  padding: 13.2rem 0 3rem;
+  background-color: $color-dark;
+  color: $color-light;
+  @include font(1.8rem, 400, 0);
+
+  &__wrapper {
+    flex-direction: column;
+  }
+
+  &__content {
+    margin: 0 5px 0 3px;
+    display: flex;
+  }
+
+  &__logo {
+    background-color: $color-light;
+    border-radius: 20px;
+    flex-basis: 18.7rem;
+    height: 8.8rem;
+    padding: 1.9rem 2.6rem;
+    margin-right: 6.8rem;
+  }
+
+  &__links-wrapper {
+    display: flex;
+    gap: 7.6rem;
+  }
+
+  &__links {
+    &:last-child {
+      margin-left: 9px;
+    }
+  }
+  &__title {
+    text-wrap: nowrap;
+  }
+  &__text {
+    margin-top: 2.3rem;
+  }
+  &__link {
+    display: block;
+    margin-top: 2.3rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.4rem;
+  }
+
+  &__social-links {
+    max-width: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $color-light;
+    margin-bottom: 1.6rem;
+  }
+  &__author {
+  }
+}
