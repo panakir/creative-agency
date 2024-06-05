@@ -7,6 +7,10 @@ body {
   color: $color-text-light;
 }
 
+section {
+  position: relative;
+}
+
 h1,
 h2 {
   @extend %font-additional;
