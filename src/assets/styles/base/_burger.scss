@@ -1,0 +1,27 @@
+.burger {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 18px;
+  height: 15px;
+  cursor: pointer;
+
+  &__line {
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: $color-dark;
+    border-radius: 50%;
+    &:first-child {
+      width: 18px;
+    }
+
+    &:last-child {
+      width: 18px;
+    }
+  }
+}

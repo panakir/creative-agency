@@ -2,6 +2,15 @@
   margin-top: 7.2rem;
   margin-bottom: 6.9rem;
   padding: 0 1.5rem;
+
+  @include media-tablet {
+    margin-top: 5.6rem;
+  }
+
+  @include media-mobile {
+    margin-top: 4rem;
+  }
+
   &__wrapper {
     margin: 0 auto;
     display: flex;
@@ -12,5 +21,12 @@
   &__logo {
     width: 13.6rem;
     height: 5rem;
+  }
+
+  &__navigation,
+  &__button {
+    @include media-tablet {
+      display: none;
+    }
   }
 }

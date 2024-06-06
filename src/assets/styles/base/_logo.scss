@@ -1,3 +1,15 @@
 .logo {
   width: 136px;
+
+  @include media-desktop {
+    width: 121px;
+  }
+
+  @include media-tablet {
+    width: 106px;
+  }
+
+  @include media-mobile {
+    width: 91px;
+  }
 }
