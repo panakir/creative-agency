@@ -115,14 +115,17 @@
       display: inline-block;
       width: 24px;
       height: 24px;
+      background: url("./assets/images/play-circle.svg") center / contain
+        no-repeat;
+
+      @include media-desktop {
+        width: 18px;
+        height: 18px;
+      }
 
       @include media-mobile {
         width: 13px;
         height: 13px;
-        svg {
-          width: 13px;
-          height: 13px;
-        }
       }
     }
     &:not(&:last-child) {
