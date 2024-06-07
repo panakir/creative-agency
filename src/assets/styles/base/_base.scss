@@ -31,11 +31,9 @@ h1 {
   color: $color-text-dark;
 
   @include media-desktop {
-    font-size: 5rem;
-  }
-  @include media-tablet {
     @include font(5rem, 800, 0.01);
   }
+
   @include media-mobile {
     @include font(4rem, 800, 0.01);
   }
@@ -44,11 +42,35 @@ h1 {
 h2 {
   @include font(5.5rem, 600, 0.003);
   color: $color-text-dark;
+
+  @include media-desktop {
+    @include font(5rem, 600, 0.003);
+  }
+
+  @include media-tablet {
+    @include font(4.25rem, 600, 0.003);
+  }
+
+  @include media-mobile {
+    @include font(3.4rem, 600, 0.003);
+  }
 }
 
 h3 {
-  @include font(2.4rem, 700, 0.01, 24px);
+  @include font(2.4rem, 600, 0.01, 24px);
   color: $color-primary;
+
+  @include media-desktop {
+    @include font(2.2rem, 600, 0.01);
+  }
+
+  @include media-tablet {
+    @include font(2.1rem, 800, 0.01);
+  }
+
+  @include media-mobile {
+    @include font(2rem, 800, 0.01);
+  }
 }
 
 h4 {
@@ -62,4 +84,12 @@ h5 {
 
 .text {
   @include font(2rem, 400, 0.01, 32px);
+
+  @include media-tablet {
+    line-height: 28px;
+  }
+
+  @include media-mobile {
+    line-height: 24px;
+  }
 }
