@@ -31,6 +31,10 @@
       background-color: $color-primary;
       color: $color-light;
     }
+
+    @include media-mobile {
+      width: 21rem;
+    }
   }
 
   &:not(&_active, &_button, &__social):hover {

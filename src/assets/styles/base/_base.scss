@@ -1,5 +1,15 @@
 html {
   font-size: 10px;
+
+  @include media-desktop {
+    font-size: 9px;
+  }
+  @include media-tablet {
+    font-size: 8px;
+  }
+  @include media-mobile {
+    font-size: 7px;
+  }
 }
 
 body {
@@ -17,8 +27,18 @@ h2 {
 }
 
 h1 {
-  @include font(6.4rem, 800);
+  @include font(6.4rem, 800, 0.01);
   color: $color-text-dark;
+
+  @include media-desktop {
+    font-size: 5rem;
+  }
+  @include media-tablet {
+    @include font(5rem, 800, 0.01);
+  }
+  @include media-mobile {
+    @include font(4rem, 800, 0.01);
+  }
 }
 
 h2 {

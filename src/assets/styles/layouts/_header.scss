@@ -1,14 +1,13 @@
 .header {
   margin-top: 7.2rem;
   margin-bottom: 6.9rem;
-  padding: 0 1.5rem;
 
   @include media-tablet {
-    margin-top: 5.6rem;
+    margin-top: 5.7rem;
   }
 
   @include media-mobile {
-    margin-top: 4rem;
+    margin-bottom: 8rem;
   }
 
   &__wrapper {
