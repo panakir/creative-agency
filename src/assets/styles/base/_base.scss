@@ -78,12 +78,12 @@ h4 {
 }
 
 h5 {
-  @include font(2rem, 600, 0.003);
+  @include font(2rem, 600, 0.003, 1.7);
   color: $color-primary;
 }
 
 .text {
-  @include font(2rem, 400, 0.01, 32px);
+  @include font(2rem, 400, 0.01, 1.6);
 
   @include media-tablet {
     line-height: 28px;
@@ -91,5 +91,9 @@ h5 {
 
   @include media-mobile {
     line-height: 24px;
+  }
+
+  &_small {
+    @include font(1.8rem, 400, 0.01, 1.55);
   }
 }

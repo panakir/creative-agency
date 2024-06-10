@@ -1,0 +1,81 @@
+.review {
+  padding: 4.3rem 0 11rem 4rem;
+  box-shadow: 0 8px 24px rgb(0 0 0/ 0.05);
+  background-color: $color-light;
+  border-radius: 20px;
+
+  &__header {
+    display: flex;
+    align-items: start;
+    gap: 3rem;
+    margin-bottom: 2.3rem;
+  }
+
+  &__avatar {
+    max-width: 70px;
+    @extend %drop-shadow;
+  }
+
+  &__heading {
+    margin-top: 0.7rem;
+  }
+
+  &__title {
+    @extend %drop-shadow;
+  }
+
+  &__subtitle {
+    @include font(1.1rem, 400, 0.01, 1);
+    @extend %drop-shadow;
+  }
+
+  &__content {
+    max-width: 310px;
+  }
+
+  &__description {
+    @extend %drop-shadow;
+  }
+
+  &_small {
+    width: 100%;
+    padding: 2.7rem 0 2.5rem 2.1rem;
+    box-shadow: 0 4px 4px rgb(0 0 0/ 0.25);
+
+    .review__header {
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .review__avatar {
+      max-width: 32px;
+      @extend %drop-shadow;
+    }
+
+    .review__heading {
+      margin-top: 0.4rem;
+    }
+
+    .review__title {
+      color: inherit;
+      @include font(1rem, 600, 0.01, 1.3);
+      @extend %drop-shadow;
+    }
+
+    .review__subtitle {
+      @include font(0.6rem, 600, 0.01, 1.3);
+      color: rgba($color-text-dark, 0.5);
+      @extend %drop-shadow;
+    }
+
+    .review__description {
+      @extend %font-additional;
+      @include font(1rem, 400, 0.01, 1.4);
+      @extend %drop-shadow;
+    }
+
+    .review__content {
+      max-width: 125px;
+    }
+  }
+}

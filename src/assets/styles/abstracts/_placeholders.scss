@@ -17,3 +17,7 @@
 %circle-add-bg {
   background: linear-gradient(#ff8e8e, #f62424);
 }
+
+%drop-shadow {
+  filter: drop-shadow(0 4px 4px rgb(0 0 0/ 0.25));
+}
