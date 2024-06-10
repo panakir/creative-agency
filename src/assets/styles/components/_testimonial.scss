@@ -1,6 +1,10 @@
 .testimonial {
   margin-top: 19.9rem;
 
+  @include media-mobile {
+    margin-top: 17rem;
+  }
+
   &__header {
     margin: 0 auto;
     text-align: center;
@@ -8,25 +12,90 @@
 
   &__subtitle {
     margin-bottom: 2rem;
+
+    @include media-mobile {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__content {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
     margin-top: 5.3rem;
-    @include layout(38rem);
-    gap: 5rem;
+
+    @include media-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include media-mobile {
+      overflow: hidden;
+      flex-wrap: nowrap;
+      justify-content: start;
+    }
+  }
+
+  &__review {
+    max-width: 380px;
+    flex: 0 1 100%;
+
+    @include media-desktop {
+      padding-bottom: 7vw;
+    }
+
+    @include media-tablet {
+      max-width: 70%;
+      .review__content {
+        max-width: 100%;
+      }
+    }
+
+    @include media-mobile {
+      max-width: 100%;
+      flex: 1 0 100%;
+
+      .review__header {
+        margin: 2.43rem 0 5.3rem 1.71rem;
+      }
+
+      .review__heading {
+        margin-top: 15px;
+      }
+
+      .review__title {
+        margin-bottom: 10px;
+      }
+
+      .review__content {
+        margin-left: 1.71rem;
+      }
+    }
   }
 
   &__decor {
     .decor__rect_6 {
       transform: rotate(14.48deg);
+
       &:first-child {
         top: -44px;
         left: 107px;
+
+        @include media-tablet {
+          display: none;
+        }
       }
       &:last-child {
         bottom: -33px;
-        right: -15px;
+        right: 2vw;
+
+        @media (min-width: 1440px) {
+          right: -15px;
+        }
+
+        @include media-mobile {
+          display: none;
+        }
       }
     }
   }

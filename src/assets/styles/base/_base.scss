@@ -78,8 +78,12 @@ h4 {
 }
 
 h5 {
-  @include font(2rem, 600, 0.003, 1.7);
+  @include font(2rem, 600, 0.01, 1.7);
   color: $color-primary;
+
+  @include media-mobile {
+    @include font(18px, 600, 0.01, 1.27);
+  }
 }
 
 .text {
