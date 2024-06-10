@@ -10,7 +10,7 @@
   }
 
   &__wrapper {
-    @include layout(45%);
+    @include layout(45.5%);
 
     @include media-desktop {
       flex-wrap: wrap;
@@ -27,7 +27,6 @@
 
     @include media-desktop {
       flex: 1 0 100%;
-      text-align: center;
       margin-top: 0;
     }
   }
@@ -41,6 +40,7 @@
 
     @include media-desktop {
       max-width: 100%;
+      text-align: center;
     }
 
     @include media-tablet {
@@ -49,16 +49,28 @@
     }
   }
 
-  &__text {
-    max-width: 51rem;
+  &__subtitle {
+    @include media-desktop {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    max-width: 52rem;
 
     @include media-desktop {
       max-width: 100%;
     }
   }
 
+  &__text {
+    @include media-desktop {
+      text-align: justify;
+    }
+  }
+
   &__link {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
     align-items: center;
     margin-left: auto;
@@ -90,7 +102,7 @@
     grid-template-columns: repeat(2, min(262px, 50%));
     justify-content: space-between;
     align-content: space-between;
-    row-gap: 38px;
+    gap: 38px 1vw;
 
     @include media-desktop {
       justify-content: space-around;
@@ -104,15 +116,23 @@
 
     @include media-mobile {
       grid-template-columns: 262px;
-      margin-top: 1.3rem;
+      margin-top: 3.6rem;
     }
 
     .card {
       @extend %transition;
 
+      @include media-mobile {
+        gap: 2rem;
+      }
+
       &__image {
         @include media-tablet {
           margin-bottom: 0;
+        }
+
+        @include media-mobile {
+          margin-bottom: 10px;
         }
       }
 
@@ -122,10 +142,6 @@
         @include media-mobile {
           @include font(16px, 700, 0.01, 24px);
         }
-      }
-
-      &:hover {
-        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
       }
     }
   }
