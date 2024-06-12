@@ -40,19 +40,19 @@ h1 {
 }
 
 h2 {
-  @include font(5.5rem, 600, 0.003);
+  @include font(5.5rem, 700, 0.003);
   color: $color-text-dark;
 
   @include media-desktop {
-    @include font(5rem, 600, 0.003);
+    @include font(5rem, 700, 0.003);
   }
 
   @include media-tablet {
-    @include font(4.25rem, 600, 0.003);
+    @include font(4.25rem, 700, 0.003);
   }
 
   @include media-mobile {
-    @include font(3.4rem, 600, 0.003);
+    @include font(3.4rem, 700, 0.003);
   }
 }
 

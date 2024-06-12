@@ -30,7 +30,7 @@
   }
 
   &__content {
-    max-width: 310px;
+    max-width: 315px;
   }
 
   &__description {
@@ -76,6 +76,24 @@
 
     .review__content {
       max-width: 125px;
+    }
+
+    @include media-mobile {
+      padding: 1.8rem 1rem 1rem 0.9rem;
+
+      .review__description {
+        max-width: 60px;
+        @include font(0.71rem, 400, 0.01, 1.4);
+      }
+
+      .review__header {
+        gap: 0.65rem;
+        margin-bottom: 1.14rem;
+      }
+
+      .review__heading {
+        margin-top: 0.3rem;
+      }
     }
   }
 }

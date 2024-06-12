@@ -39,6 +39,7 @@
     align-items: center;
     position: relative;
     margin-bottom: 6.2rem;
+    flex-wrap: wrap-reverse;
 
     @include media-tablet {
       justify-content: center;
@@ -68,13 +69,14 @@
     @extend %transition;
 
     @include media-tablet {
-      flex: 0 0 80vw;
+      flex: 0 0 77vw;
       min-height: 300px;
     }
 
     @include media-mobile {
       min-width: 300px;
       min-height: 300px;
+      padding: 3.5rem 3rem;
     }
 
     &:first-child {
@@ -85,7 +87,6 @@
     &:last-child {
       background: url("./assets/images/portfolio/design-furniture-app.png")
         center / 100% no-repeat;
-      padding: 3.5rem 3.4rem;
     }
 
     &:hover {
@@ -100,8 +101,8 @@
   }
 
   &__slide-title {
+    @include font(24px, 700, 0.03, 1);
     color: $color-light;
-    line-height: 0.003;
   }
 
   &__link {
@@ -124,7 +125,6 @@
   &__decor {
     .decor__rect {
       &:first-child {
-        // display: none;
         transform: rotate(-16.32deg);
         top: 150px;
         right: 1vw;
