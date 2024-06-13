@@ -1,7 +1,9 @@
 .header {
   margin-top: 7.2rem;
   margin-bottom: 6.9rem;
-
+  color: $color-text-dark;
+  position: relative;
+  z-index: 10;
   @include media-tablet {
     margin-top: 5.7rem;
   }

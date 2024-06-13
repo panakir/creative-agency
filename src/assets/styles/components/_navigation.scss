@@ -1,9 +1,19 @@
 .navigation {
-  color: $color-text-dark;
+  color: inherit;
   @include font(1.8rem);
 
   &__list {
     display: flex;
     gap: 5rem;
+  }
+}
+
+.burger-menu__navigation {
+  .navigation {
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

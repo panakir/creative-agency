@@ -1,5 +1,6 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 
   @include media-desktop {
     font-size: 9px;
@@ -15,6 +16,9 @@ html {
 body {
   @extend %font-primary;
   color: $color-text-light;
+  &.locked {
+    overflow: hidden;
+  }
 }
 
 section {
