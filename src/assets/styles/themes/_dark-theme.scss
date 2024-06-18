@@ -1,0 +1,49 @@
+.dark-theme {
+  color: $color-dark-theme-light;
+  background-color: $color-dark-theme-bg;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  span {
+    color: inherit;
+  }
+
+  .header {
+    color: inherit;
+  }
+
+  .button,
+  .link:not(.navigation__link, .footer__link) {
+    color: inherit;
+    border-color: inherit;
+    &:hover {
+      background-color: $color-dark-theme-light;
+      color: $color-dark-theme-dark;
+    }
+  }
+
+  .about-us__button > span {
+    background-image: url("./assets/images/icons/play-circle-dark-theme.svg");
+  }
+
+  .intro__projects,
+  .intro__review {
+    background-color: $color-dark-theme-dark;
+    color: inherit;
+  }
+
+  .testimonial__review {
+    background-color: #0b0f15;
+  }
+
+  .card {
+    border-color: rgb(255 255 255 / 0.1);
+    &:hover {
+      background-color: #0b0f15;
+    }
+  }
+}

@@ -24,3 +24,8 @@ button {
 img {
   width: 100%;
 }
+
+*::after,
+*::before {
+  display: block;
+}
